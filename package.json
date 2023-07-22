@@ -1,0 +1,31 @@
+{
+  "name": "evangadi-forum",
+  "version": "1.0.0",
+  "description": "evangadi forum",
+  "main": "Server.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon server.js\" \"npm run Forum-Frontend\"",
+    "Forum-Frontend": "npm start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "hamza",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "g": "^2.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "mysql2": "^3.5.1",
+    "nodemon": "^3.0.1",
+    "react-icons-kit": "^2.0.0",
+    "react-router-dom": "^6.14.1",
+    "textarea": "^0.3.0",
+    "uuid": "^9.0.0"
+  }
+}
