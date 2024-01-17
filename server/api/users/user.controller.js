@@ -9,6 +9,7 @@ const pool = require("../../config/database");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+
 module.exports = {
   createUser: (req, res) => {
     const { userName, firstName, lastName, email, password } = req.body;
