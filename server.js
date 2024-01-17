@@ -9,8 +9,6 @@ const questionRouter = require("./server/api/questions/question.router");
 const answerRouter = require("./server/api/answers/answer.router");
 
 
-
-
 app.use(cors());
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
