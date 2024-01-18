@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "concurrently \"nodemon server.js\" \"npm run Forum-Frontend\"",
     "Forum-Frontend": "npm start --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hamza",
   "license": "ISC",
