@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently \"nodemon server.js\" \"npm run Forum-Frontend\"",
     "Forum-Frontend": "npm start --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
   },
   "author": "hamza",
   "license": "ISC",
@@ -21,7 +22,7 @@
     "g": "^2.0.1",
     "jsonwebtoken": "^9.0.1",
     "mysql2": "^3.5.1",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.3",
     "react-icons-kit": "^2.0.0",
     "react-router-dom": "^6.14.1",
     "sanitize": "^2.1.2",
