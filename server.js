@@ -9,7 +9,21 @@ const questionRouter = require("./server/api/questions/question.router");
 const answerRouter = require("./server/api/answers/answer.router");
 
 
-app.use(cors());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", true);
+  next();
+});
+
+
+const corsOptions = {
+  origin: [
+    "https://ajibar-school-forum.pages.dev",
+  ],
+  optionsSuccessStatus: 200,
+};
+
+
+app.use(cors(corsOptions));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use("/api/users", userRouter);
