@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   next();
 });
 const corsOptions = {
-  origin:"https://ajibar-school-forum.pages.dev",
+  origin: "http://localhost:3000",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
@@ -29,4 +29,4 @@ app.use("/api/answer", answerRouter);
 
 
 
-app.listen(port,"0.0.0.0",() => console.log(`listing at http://localhost:${port}`));
+app.listen(port,"0.0.0.0",() => console.log(`listing at ${port}`));
